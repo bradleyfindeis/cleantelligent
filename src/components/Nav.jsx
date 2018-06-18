@@ -9,7 +9,7 @@ const Main = styled.nav`
   width: 100%;
   height: 150px;
   padding-top: 50px;
-  background: #454545;
+  background: blue;
 `
 
 export class Nav extends React.Component {
