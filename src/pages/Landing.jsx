@@ -1,17 +1,32 @@
 import React from 'react'
 
 import {
-  Nav,
+  Input,
   Button
 } from '../components'
 
-function Landing(){
-  return (
-    <Button 
-      label='test'
-      size='large'
-    />
-  )
+class Landing extends React.Component {
+  state = {
+    value: ''
+  }
+
+  handleChange = ({ target: { name, value } }) => {
+    this.setState({
+      [name]: value
+    })
+  }
+
+  render = () => {
+    return (
+      <Input
+        type='text'
+        value={this.state.value}
+        
+        onChange={this.handleChange}
+        placeholder='Email'
+      />
+    )
+  }
 }
 
 export default Landing

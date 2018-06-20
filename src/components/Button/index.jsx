@@ -8,13 +8,12 @@ export class Button extends React.Component {
       label,
       size,
       filled,
-      onClick
     } = this.props
 
     return (
       <button
         className={`button ${size} ${filled && 'filled'}`}
-        onClick={onClick && onClick}
+        {...this.props}
       >
         {label.toUpperCase()}
       </button>
