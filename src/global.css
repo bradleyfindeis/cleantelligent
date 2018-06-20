@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+:root {
+  --blue: rgb(26, 132, 198);
+  --bright-blue: rgb(4, 109, 166);
+  --dark-blue: rgb(13, 66, 99);
+  --white: rgb(242, 242, 242);
+  --dark-white: rgb(241, 249, 255);
+  --black: rgb(74, 74, 74);
+  --dark-black: rgb(0, 0, 0);
+
+  --main-shadow: 0 10px 40px rgba(0, 0, 0, 0.45);
+
+  --main-gradient: linear-gradient(var(--blue), var(--dark-blue));
+}
+
+.App {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.App:after, .App:before {
+  box-sizing: inherit;
+}

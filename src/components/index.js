@@ -1,2 +1,2 @@
-export * from './Nav.jsx'
+export * from './Nav'
 export * from './Button'
