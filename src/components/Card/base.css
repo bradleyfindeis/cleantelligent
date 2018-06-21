@@ -1,6 +1,31 @@
 .card {
   background: var(--white);
   box-shadow: var(--main-shadow);
-  border-radius: 5px;
-  
+  border-radius: 3px;
+  display: flex;
+  /* position: absolute; */
+}
+
+.card.mobile {
+  height: 500px;
+  width: 300px;
+}
+
+.card.comment {
+  height: 250px;
+  width: 500px;
+}
+
+.card.jumbo {
+  height: 100vh;
+  width: 100%;
+  background: var(--main-gradient);
+  z-index: 0;
+}
+
+.card.angled {
+  margin-top: 100px;
+  box-sizing: inherit;
+  position: absolute;
+  transform: skewY(2deg);
 }

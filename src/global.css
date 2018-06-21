@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,400,600');
+@import url('https://use.fontawesome.com/releases/v5.1.0/css/all.css');
 
 :root {
   --blue: rgb(26, 132, 198);
@@ -18,9 +19,19 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  height: 200vh;
   font-family: 'Montserrat', sans-serif;
+  background: var(--white);
 }
 
 .App:after, .App:before {
   box-sizing: inherit;
+}
+
+a, li, ul {
+  text-decoration: none;
+  list-style-type: none;
+  color: inherit;
+  margin: 0;
+  padding: 0;
 }

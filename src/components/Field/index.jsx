@@ -1,19 +1,40 @@
 import React from 'react'
-import { Field } from 'formik'
+import { Field as FField } from 'formik'
 
 import './base.css'
 
 export class Field extends React.Component {
   render = () => {
-    const { type } = this.props
+    const {
+      type,
+      name
+    } = this.props
     return (
-      <Field render={({ field }) => (
-        <input 
-          className={`${type === 'text' ? 'input' : 'select'}`}
-          {...this.props}
-          {...field}
-        />
-      )}/>
+      <FField
+        name={name}
+        render={({ field }) => {
+          switch (type) {
+            default:
+              return (
+                <input
+                  type='text'
+                  {...this.props}
+                  {...field}
+                />
+              )
+
+            case 'select':
+              return (
+                <select 
+                  {...this.props}
+                  {...field}
+                >
+                  {this.props.children}
+                </select>
+              )
+          }
+        }}
+      />
     )
   }
 }

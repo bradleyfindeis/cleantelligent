@@ -1,8 +1,9 @@
 import React from 'react'
 import {
   Formik,
-  Form
+  Form as FForm
 } from 'formik'
+
 
 import './base.css'
 
@@ -11,7 +12,8 @@ export class Form extends React.Component {
     const {
       initialValues,
       onSubmit,
-      children
+      children,
+      style
     } = this.props
     return (
       <Formik
@@ -19,9 +21,11 @@ export class Form extends React.Component {
         initialValues={initialValues}
         onSubmit={onSubmit}
       >
-        <Form className='form'>
-          {children()}
-        </Form>
+        <FForm 
+          className='form'
+        >
+          {children}
+        </FForm>
       </Formik>
     )
   }
