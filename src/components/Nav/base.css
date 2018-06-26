@@ -4,6 +4,7 @@ nav {
   width: 100%;
   padding: 10px;
   margin-top: 30px;
+  z-index: 2;
 }
 
 nav > .content {
@@ -23,7 +24,7 @@ nav > hr {
   border-bottom: 1px solid rgba(240, 240, 240, 0.45);
 }
 
-.nav-opts {
+nav > .content > .nav-opts {
   width: 35%;
   /* position: relative; */
   display: flex;
@@ -31,26 +32,26 @@ nav > hr {
   align-items: center;
 }
 
-.icon {
+nav > .content > .icon {
   display: none;
   height: 100px;
 }
 
-.logo {
+nav > .content > .logo {
   /* display: none; */
   height: 100px;
 }
 
-.burger {
+nav > .burger {
   display: none;
 }
 
 @media(max-width: 1160px) {
-  .icon {
+  nav > .content >.icon {
     display: flex
   }
 
-  .logo {
+  nav > .content > .logo {
     display: none;
   }
 }

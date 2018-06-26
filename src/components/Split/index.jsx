@@ -3,23 +3,23 @@ import React from 'react'
 export const Split = ({
   primary = () => null,
   secondary = () => null,
-  direction = 'vertical',
+  horizontal = false,
   split = 50,
   style = {}
 }) => {
-  const flexDirection = direction === 'horizontal' ?
+  const flexDirection = horizontal ?
     'column' :
     'row'
-  const primHeight = direction === 'horizontal' ?
+  const primHeight = horizontal ?
     `${split}%` :
     '100%'
-  const primWidth = direction === 'vertical' ?
+  const primWidth = horizontal ?
     `${split}%` :
     '100%'
-  const secHeight = direction === 'horizontal' ?
+  const secHeight = horizontal ?
     `${100 - split}%` :
     '100%'
-  const secWidth = direction === 'vertical' ?
+  const secWidth = horizontal ?
     `${100 - split}%` :
     '100%'
 
@@ -37,14 +37,14 @@ export const Split = ({
         height: primHeight,
         width: primWidth,
         position: 'relative',
-        overflow: 'scroll'
+        // overflow: 'scroll'
       }}>
         {primary()}
       </div>
       <div style={{
         height: secHeight,
         width: secWidth,
-        overflow: 'scroll',
+        // overflow: 'scroll',
         position: 'relative'
       }}>
         {secondary()}

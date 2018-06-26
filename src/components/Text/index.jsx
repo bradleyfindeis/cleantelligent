@@ -8,17 +8,20 @@ export const Text = ({
   subtitle,
   option,
   light,
+  body,
+  mobile,
   fineprint,
+  centered,
   style
 }) => {
-  const classNames = `text${jumbo ? ' jumbo' : ''}${subtitle ? ' subtitle' : ''}${option ? ' option' : ''}${fineprint ? ' fineprint' : ''}${light ? ' light' : ''}`
+  const classNames = `text${jumbo ? ' jumbo' : ''}${subtitle ? ' subtitle' : ''}${option ? ' option' : ''}${fineprint ? ' fineprint' : ''}${body ? ' body' : ''}${light ? ' light' : ''}${centered ? ' centered' : ''}${mobile ? ' mobile' : ''}`
 
   return (
-    <span 
+    <div 
       className={classNames}
       style={style && style}
     >
       {option ? children.toUpperCase() : children}
-    </span>
+    </div>
   )
 }

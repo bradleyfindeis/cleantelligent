@@ -1,0 +1,27 @@
+.fifth {
+  padding-top: 200px
+}
+.fifth > .form {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.fifth > .form > .fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.fifth > .mobile-text-group {
+  display: none;
+}
+
+@media(max-width: 915px) {
+  .fifth > .text-group {
+    display: none;
+  }
+
+  .fifth > .mobile-text-group {
+    display: initial;
+  }
+}

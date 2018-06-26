@@ -3,17 +3,7 @@
   box-shadow: var(--main-shadow);
   border-radius: 3px;
   display: flex;
-  /* position: absolute; */
-}
-
-.card.mobile {
-  height: 500px;
-  width: 300px;
-}
-
-.card.comment {
-  height: 250px;
-  width: 500px;
+  position: relative;
 }
 
 .card.jumbo {
@@ -24,8 +14,14 @@
 }
 
 .card.angled {
-  margin-top: 100px;
   box-sizing: inherit;
-  position: absolute;
   transform: skewY(2deg);
+}
+
+.card.angled > .content {
+  width: 100%;
+  height: 100%;
+  transform: skewY(-2deg);
+  display: flex;
+  flex-direction: column;
 }

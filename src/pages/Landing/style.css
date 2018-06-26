@@ -1,3 +1,5 @@
-.textGroup {
-  position: relative;
+@media(max-width: 1370px) {
+  .comments {
+    display: flex;
+  }
 }

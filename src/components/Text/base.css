@@ -2,31 +2,59 @@
   font-family: 'Montserrat', sans-serif;
   color: inherit;
   position: relative;
-  display: flex;
   margin: 10px;
   top: 0;
 }
 
 .text.option {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 600;
 }
 
 .text.jumbo {
-  font-size: 60px;
+  font-size: 3rem;
   font-weight: 400;
 }
 
 .text.subtitle {
-  font-size: 23px;
+  font-size: 1.5rem;
   font-weight: 200;
 }
 
+.text.body {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
 .text.fineprint {
-  font-size: 8px;
+  font-size: 0.6rem;
   font-weight: 200;
 }
 
 .text.light {
   color: var(--white);
+}
+
+.text.centered {
+  text-align: center;
+}
+
+.text.mobile.jumbo {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.text.mobile.subtitle {
+  font-size: 1rem;
+  font-weight: 200;
+}
+
+.text.mobile.body {
+  font-size: 0.5rem;
+  font-weight: 200;
+}
+
+.text.mobile.option {
+  font-size: 0.5rem;
+  font-weight: 600;
 }

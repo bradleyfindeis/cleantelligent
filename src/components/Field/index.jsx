@@ -7,7 +7,10 @@ export class Field extends React.Component {
   render = () => {
     const {
       type,
-      name
+      className,
+      children,
+      name,
+      ...rest
     } = this.props
     return (
       <FField
@@ -17,8 +20,9 @@ export class Field extends React.Component {
             default:
               return (
                 <input
+                  className={`field${className ? ` ${className}` : ''}`}
                   type='text'
-                  {...this.props}
+                  {...rest}
                   {...field}
                 />
               )
@@ -26,10 +30,11 @@ export class Field extends React.Component {
             case 'select':
               return (
                 <select 
-                  {...this.props}
+                  className={`field${className ? ` ${className}` : ''}`}
+                  {...rest}
                   {...field}
                 >
-                  {this.props.children}
+                  {children}
                 </select>
               )
           }

@@ -13,17 +13,14 @@ export class Form extends React.Component {
       initialValues,
       onSubmit,
       children,
-      style
+      className,
     } = this.props
     return (
       <Formik
-        className='formik'
         initialValues={initialValues}
         onSubmit={onSubmit}
       >
-        <FForm 
-          className='form'
-        >
+        <FForm className={`form${className ? ` ${className}` : ''}`}>
           {children}
         </FForm>
       </Formik>

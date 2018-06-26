@@ -4,11 +4,21 @@ import './base.css'
 
 export class Card extends React.Component {
   render = () => {
+    const {
+      jumbo,
+      angled,
+      className,
+      children
+    } = this.props
     return (
       <div
-        className={`card${this.props.mobile ? ' mobile' : ''}${this.props.comment ? ' comment' : ''}${this.props.jumbo ? ' jumbo' : ''}${this.props.angled ? ' angled' : ''}`}
+        className={`card${jumbo ? ' jumbo' : ''}${angled ? ' angled' : ''}${className && ! angled ? ` ${className}` : ''}`}
       >
-        {this.props.children}
+        {angled ? (
+          <div className={`content ${className ? ` ${className}` : ''}`}>
+            {children}
+          </div>
+        ) : children}
       </div>
     )
   }

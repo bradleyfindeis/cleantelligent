@@ -1,0 +1,14 @@
+i {
+  color: inherit;
+  font-size: 25px;
+}
+
+i.light {
+  color: var(--white);
+}
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+

@@ -1,0 +1,9 @@
+footer {
+  height: 50vh;
+  width: 100vw;
+  background: var(--light-blue);
+  position: absolute;
+  z-index: 2;
+  /* bottom: 0; */
+  margin-top: -50px;
+}
