@@ -12,7 +12,7 @@ export class Card extends React.Component {
     } = this.props
     return (
       <div
-        className={`card${jumbo ? ' jumbo' : ''}${angled ? ' angled' : ''}${className && ! angled ? ` ${className}` : ''}`}
+        className={`card${jumbo ? ' jumbo' : ''}${angled ? ' angled' : ''}${className ? ` ${className}` : ''}`}
       >
         {angled ? (
           <div className={`content ${className ? ` ${className}` : ''}`}>
