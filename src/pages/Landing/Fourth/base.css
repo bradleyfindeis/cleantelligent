@@ -4,15 +4,12 @@
 }
 
 .fourth > .comments {
-  height: 800px;
-  margin: 150px auto 0 auto;
+  height: 600px;
+  margin: 150px auto 150px auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
-}
-
-.fourth > .comments > .comment {
-  margin: 0 auto;
+  grid-gap: 50px 200px;
 }
 
 .fourth > .counters {
@@ -22,7 +19,7 @@
   justify-content: space-between;
 }
 
-.fourth > .mobile-text {
+.fourth > .mobile-text-group {
   display: none
 }
 
@@ -45,7 +42,7 @@
     grid-gap: 20px
   }
 
-  .fourth > .mobile-text {
+  .fourth > .mobile-text-group {
     display: initial;
   }
 

@@ -1,9 +1,7 @@
 footer {
-  height: 50vh;
+  height: 350px;
   width: 100vw;
   background: var(--light-blue);
   position: absolute;
   z-index: 2;
-  /* bottom: 0; */
-  margin-top: -50px;
 }

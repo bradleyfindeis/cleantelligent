@@ -19,23 +19,22 @@ export class Fourth extends React.Component {
   render = () => {
     return (
       <div className="fourth">
-        <Text
-          body
-          centered
-          style={{
-            top: '3%'
-          }}
-        >
-          For over <strong>fifteen years</strong> we've helped cleaning businesses succeed and grow. CleanTelligent is the most <strong>award-winning, comprehensive</strong> quality control and janitorial software solution.
-        </Text>
-        <div className="mobile-text">
+        <div className="text-group">
+          <Text
+            body
+            centered
+          >
+            For over <strong>fifteen years</strong> we've helped cleaning businesses succeed and grow. CleanTelligent is the most <strong>award-winning, comprehensive</strong> quality control and janitorial software solution.
+          </Text>
+        </div>
+        <div className="mobile-text-group">
           <Text
             mobile
             jumbo
             centered
           >For over <strong>fifteen years</strong> we've helped cleaning businesses succeed and grow. CleanTelligent is the most <strong>award-winning, comprehensive</strong> quality control and janitorial software solution.</Text>
         </div>
-        <Waypoint onEnter={() => {this.setState({waypoint: true})}}/>
+        <Waypoint onEnter={() => { this.setState({ waypoint: true }) }} />
         {this.state.waypoint && (
           <div className="counters">
             <Counter
