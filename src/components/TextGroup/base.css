@@ -1,0 +1,13 @@
+.text-group > .mobile {
+  display: none;
+}
+
+@media(max-width: 915px) {
+  .text-group > .desktop {
+    display: none;
+  }
+
+  .text-group > .mobile {
+    display: initial;
+  }
+}

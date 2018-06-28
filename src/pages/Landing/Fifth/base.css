@@ -1,28 +1,26 @@
 .fifth.angled {
-  padding-top: 200px;
-  margin-bottom: -200px;
+  margin-bottom: -250px;
+  padding-top: 150px;
 }
-.fifth > .form {
+
+.fifth.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fifth.content > .text-group {
+  width: 45%;
+  margin-bottom: 50px;
+}
+
+.fifth.content > .form {
   width: 80%;
   margin: 0 auto;
 }
 
-.fifth > .form > .fields {
+.fifth.content > .form > .fields {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-}
-
-.fifth > .mobile-text-group {
-  display: none;
-}
-
-@media(max-width: 915px) {
-  .fifth > .text-group {
-    display: none;
-  }
-
-  .fifth > .mobile-text-group {
-    display: initial;
-  }
 }

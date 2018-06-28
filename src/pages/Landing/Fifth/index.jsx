@@ -4,6 +4,7 @@ import './base.css'
 import {
   Card,
   Text,
+  TextGroup,
   Form,
   Field,
   Button
@@ -23,7 +24,7 @@ export const Fifth = () => {
       jumbo
       angled
     >
-      <div className="text-group">
+      <TextGroup>
         <Text
           jumbo
           centered
@@ -36,23 +37,7 @@ export const Fifth = () => {
         >
           Schedule a free demo today! Discover how CleanTelligent can simplify your life and cleaning business needs.
         </Text>
-      </div>
-      <div className="mobile-text-group">
-        <Text
-          jumbo
-          mobile
-          centered
-          light
-        >Get Started</Text>
-        <Text
-          subtitle
-          mobile
-          centered
-          light
-        >
-          Schedule a free demo today! Discover how CleanTelligent can simplify your life and cleaning business needs.
-        </Text>
-      </div>
+      </TextGroup>
       <Form
         style={{
           backgroundColor: 'grey'

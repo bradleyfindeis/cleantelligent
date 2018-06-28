@@ -1,10 +1,10 @@
 import React from 'react'
-import CountUp from 'react-countup'
 import Waypoint from 'react-waypoint'
 
 import './base.css'
 import {
   Text,
+  TextGroup,
   Card,
 } from '../../../components'
 import { Counter } from './Counter'
@@ -19,21 +19,13 @@ export class Fourth extends React.Component {
   render = () => {
     return (
       <div className="fourth">
-        <div className="text-group">
-          <Text
-            body
-            centered
-          >
-            For over <strong>fifteen years</strong> we've helped cleaning businesses succeed and grow. CleanTelligent is the most <strong>award-winning, comprehensive</strong> quality control and janitorial software solution.
-          </Text>
-        </div>
-        <div className="mobile-text-group">
+        <TextGroup>
           <Text
             mobile
             jumbo
             centered
           >For over <strong>fifteen years</strong> we've helped cleaning businesses succeed and grow. CleanTelligent is the most <strong>award-winning, comprehensive</strong> quality control and janitorial software solution.</Text>
-        </div>
+        </TextGroup>
         <Waypoint onEnter={() => { this.setState({ waypoint: true }) }} />
         {this.state.waypoint && (
           <div className="counters">

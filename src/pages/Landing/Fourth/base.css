@@ -9,7 +9,14 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  grid-gap: 50px 200px;
+  grid-gap: 50px;
+}
+
+.fourth > .comments > .card {
+  height: 300px;
+  width: 600px;
+  align-self: center;
+  justify-self: center;
 }
 
 .fourth > .counters {
@@ -23,14 +30,35 @@
   display: none
 }
 
+@media(max-width: 1560px) {
+  .fourth > .comments > .card {
+    height: 200px;
+    width: 400px;
+  }
+}
+
 @media(max-width: 1200px) {
   .fourth > .counters {
     width: 80%;
   }
 }
 
+@media(max-width: 1060px) {
+  .fourth > .comments {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .fourth > .comments > .card {
+    height: 300px;
+    width: 80%;
+    margin-top: 50px;
+  }
+}
+
 @media(max-width: 950px) {
-  .fourth> .counters {
+  .fourth > .counters {
     width: 100%;
   }
 }

@@ -1,20 +1,14 @@
-.landing-top > .top-left {
-  position: relative;
-  padding-top: 300px;
-  left: 150px;
+.landing-top > .info {
+  width: 50%;
   display: flex;
+  padding-top: 300px;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
-  height: 600px;
-  width: 45%;
+  justify-content: space-around;
 }
 
-.landing-top > .top-left > .text-group {
-  height: 230px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.landing-top > .info > .text-group {
+  margin-left: 150px;
 }
 
 .landing-top > .img-iPhone1 {
@@ -24,22 +18,18 @@
   right: 150px;
 }
 
-.landing-top > .mobile-top {
+.landing-top > .info > .mobile-button-group {
   display: none;
-  padding-top: 200px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
-@media(max-width: 1400px) {
-  .landing-top > .top-left {
-    width: 35%;
-    left: 100px;  
+@media(max-width: 1500px) {
+  .landing-top > .info {
+    padding-top: 200px;
+    width: 55%;
   }
 
-  .landing-top > .top-left > .icon {
-    display: none;
+  .landing-top > .info > .text-group {
+    margin-left: 100px;
   }
 
   .landing-top > .img-iPhone1 {
@@ -47,11 +37,27 @@
   }
 }
 
+@media(max-width: 1250px) {
+  .landing-top > .info {
+    width: 40%;
+  }
+  .landing-top > .info > .text-group {
+    margin-left: 80px;
+  }
+
+  .landing-top > .img-iPhone1 {
+    right: 80px;
+  }
+}
+
 @media(max-width: 1100px) {
-  .landing-top > .top-left {
+  .landing-top > .info {
     padding-top: 200px;
     height: 700px;
-    left: 50px;
+  }
+
+  .landing-top > .info > .text-group {
+    margin-left: 50px;
   }
   
   .landing-top > .img-iPhone1 {
@@ -59,39 +65,34 @@
   }
 }
 
-@media(min-width: 915px) {
-  .landing-top > .top-left {
-    display: flex;
-  }
-
-  .landing-top > .mobile-top {
-    display: none;
-  }
-}
-
 @media(max-width: 915px) {
-  .landing-top > .top-left {
-    display: none
-  }
-
   .landing-top {
     flex-direction: column;
   }
-  .landing-top > .mobile-top {
-    display: flex;
+
+  .landing-top > .info {
+    height: 25%;
+    width: 100%;
+    padding-top: 175px;;
+  }
+  
+  .landing-top > .info > .button-group {
+    display: none;
+  }
+  
+  .landing-top > .info > .mobile-button-group {
+     display: initial;
+  }
+
+  .landing-top > .info > .icon {
+    display: none;
   }
 
   .landing-top > .img-iPhone1 {
     top: 50%;
-    height: 700px;
+    height: 75vh;
     right: initial;
     align-self: center;
-  }
-}
-
-@media(max-width: 815px) {
-  .mobile-top > .text-group {
-    padding: 0 30px;
   }
 }
 

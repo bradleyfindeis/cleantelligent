@@ -5,6 +5,7 @@ import './base.css'
 import {
   Card,
   Text,
+  TextGroup,
   Button,
   Icon
 } from '../../../components'
@@ -13,9 +14,8 @@ import iPhone1 from '../../../img/iphoneX_inspections.png'
 export function Top() {
   return (
     <Card jumbo className='landing-top'>
-      <div className='top-left'>
-        <div className='text-group'
-        >
+      <div className="info">
+        <TextGroup>
           <Text
             jumbo
             light
@@ -24,9 +24,9 @@ export function Top() {
             subtitle
             light
           >Get the job done better. Save money, run your operations more smoothly, and prove contract compliance with CleanTelligent.</Text>
-        </div>
+        </TextGroup>
         <div
-          className='buttonGroup'
+          className='button-group'
         >
           <Button
             filled
@@ -38,13 +38,19 @@ export function Top() {
             label='learn more'
           />
         </div>
+        <div className="mobile-button-group">
+          <Button
+            large
+            filled
+            label='learn more'
+          />
+        </div>
         <Icon
           light
           icon='angle-down'
-        />
-      </div>
+        /></div>
       {/* mobile top */}
-      <div className="mobile-top">
+      {/* <div className="mobile-top">
         <div className="text-group">
           <Text
             mobile
@@ -64,7 +70,7 @@ export function Top() {
           large
           label='learn more'
         />
-      </div>
+      </div> */}
       <img
         className='img-iPhone1'
         src={iPhone1}
