@@ -25,9 +25,3 @@
   display: flex;
   flex-direction: column;
 }
-
-@media(max-width: 915px) {
-  .card.jumbo.angled {
-    height: 75vh;
-  }
-}

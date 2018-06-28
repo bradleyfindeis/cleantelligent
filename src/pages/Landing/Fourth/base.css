@@ -41,7 +41,7 @@
   .fourth > .counters {
     width: 80%;
   }
-}
+} 
 
 @media(max-width: 1060px) {
   .fourth > .comments {

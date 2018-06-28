@@ -1,5 +1,5 @@
-@media(max-width: 1370px) {
-  .comments {
-    display: flex;
+@media(max-width: 500px) {
+  .landing > footer {
+    
   }
 }

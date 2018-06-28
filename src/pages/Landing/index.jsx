@@ -11,7 +11,7 @@ import { Fifth } from './Fifth'
 class Landing extends React.Component {
   render = () => {
     return (
-      <Page>
+      <Page className='landing'>
         <Top />
         <Second />
         <Third />

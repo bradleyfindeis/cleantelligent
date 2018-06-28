@@ -47,3 +47,13 @@
     border-right: 1px solid var(--white);
   }
 }
+
+@media(max-width: 400px) {
+  .mini-nav > hr {
+    display: none;
+  }
+
+  .mini-nav > .mini-nav-opt > .text.mobile {
+    margin: 0 3px;
+  }
+}

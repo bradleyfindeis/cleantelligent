@@ -4,9 +4,10 @@ import './base.css'
 import { MiniNav } from '../MiniNav'
 import {
   Card,
+  TextGroup,
   Text
 } from '../../../components'
-import iMac from '../../../img/imac.png'
+import { IMacDisp } from './IMacDisp'
 
 const initialState = {
   why: 'organization'
@@ -28,7 +29,7 @@ export class Third extends React.Component {
         jumbo
         angled
       >
-        <div className="text-group">
+        <TextGroup>
           <Text
             jumbo
             light
@@ -39,36 +40,12 @@ export class Third extends React.Component {
             light
             centered
           >Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quisquam ipsa, aspernatur incidunt nostrum iure modi.</Text>
-        </div>
-        <div className="mobile-text-group">
-          <Text
-            mobile
-            jumbo
-            light
-            centered
-          >Why Do I need CleanTelligent?</Text>
-          <Text
-            mobile
-            subtitle
-            light
-            centered
-          >Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quisquam ipsa, aspernatur incidunt nostrum iure modi.</Text>
-        </div>
+        </TextGroup>
         <MiniNav
           current={this.state.why}
           handleClick={this.handleChangeWhy}
         />
-        <div className='imac-disp'>
-          <Card
-            mobile
-          >
-            card</Card>
-          <img
-            src={iMac}
-            alt="imac render"
-            className='img-iMac'
-          />
-        </div>
+        <IMacDisp current={this.state.why}/>
       </Card>
     )
   }

@@ -6,10 +6,10 @@ import {
   Footer
 } from '../'
 
-export const Page = ({ children }) => (
-  <React.Fragment>
+export const Page = ({ children, className }) => (
+  <main className={className}>
     <Nav />
     {children}
     <Footer />
-  </React.Fragment>
+  </main>
 )
