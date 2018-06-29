@@ -85,7 +85,7 @@ footer > .top > .column.subscribe > .form > .field {
   }
 }
 
-@media(max-width: 875px) {
+@media(max-width: 915px) {
   footer > .top > .column.contact {
     display: none;
   }

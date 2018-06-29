@@ -40,12 +40,12 @@ export function Footer() {
             light
           >Contact Us</Text>
           <br/>
-          <Text light>460 N. University Ave.</Text>
-          <Text light>Ste. #203</Text>
-          <Text light>Provo, UT USA 84601</Text>
+          <Text light fineprint>460 N. University Ave.</Text>
+          <Text light fineprint>Ste. #203</Text>
+          <Text light fineprint>Provo, UT USA 84601</Text>
           <br/>
-          <Text light>+1 801-404-5038</Text>
-          <Text light>info@cleantelligent.com</Text>
+          <Text light fineprint>+1 801-404-5038</Text>
+          <Text light fineprint>info@cleantelligent.com</Text>
         </div>
         <div className="column links">
           <Text
@@ -54,19 +54,19 @@ export function Footer() {
           >Links</Text>
           <br/>
           <Link to='#'>
-            <Text light>About Us</Text>
+            <Text light fineprint>About Us</Text>
           </Link>
           <Link to='#'>
-            <Text light>Careers</Text>
+            <Text light fineprint>Careers</Text>
           </Link>
           <Link to='#'>
-            <Text light>Blog</Text>
+            <Text light fineprint>Blog</Text>
           </Link>
           <Link to='#'>
-            <Text light>Webinars</Text>
+            <Text light fineprint>Webinars</Text>
           </Link>
           <Link to='#'>
-            <Text light>Podcasts</Text>
+            <Text light fineprint>Podcasts</Text>
           </Link>
         </div>
         <div className="column support">
@@ -76,19 +76,19 @@ export function Footer() {
           >Support</Text>
           <br/>
           <Link to='#'>
-            <Text light>Contact Us</Text>
+            <Text light fineprint>Contact Us</Text>
           </Link>
           <Link to='#'>
-            <Text light>Coaching</Text>
+            <Text light fineprint>Coaching</Text>
           </Link>
           <Link to='#'>
-            <Text light>On-Site Training</Text>
+            <Text light fineprint>On-Site Training</Text>
           </Link>
           <Link to='#'>
-            <Text light>Jumpstart University</Text>
+            <Text light fineprint>Jumpstart University</Text>
           </Link>
           <Link to='#'>
-            <Text light>FAQs</Text>
+            <Text light fineprint>FAQs</Text>
           </Link>
         </div>
         <div className="column subscribe">
@@ -97,7 +97,7 @@ export function Footer() {
               option
               light
             >Subscribe</Text>
-            <Text light body>Recieve our monthly newsletter by email.</Text>
+            <Text light fineprint>Recieve our monthly newsletter by email.</Text>
           </TextGroup>
           <br/>
           <Form

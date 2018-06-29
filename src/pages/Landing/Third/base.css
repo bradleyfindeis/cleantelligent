@@ -1,9 +1,8 @@
 .third {
-  padding-top: 50px;
   display: flex;
   align-items: center;
 }
 
 .third > .text-group {
-  margin-top: 130px;
+  margin-top: 150px;
 }

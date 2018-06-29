@@ -73,9 +73,14 @@
   .landing-top > .info {
     height: 25%;
     width: 100%;
-    padding-top: 175px;;
+    padding-top: 175px;
   }
   
+  .landing-top > .info > .text-group {
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+
   .landing-top > .info > .button-group {
     display: none;
   }

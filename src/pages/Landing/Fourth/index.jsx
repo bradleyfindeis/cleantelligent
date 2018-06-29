@@ -21,7 +21,6 @@ export class Fourth extends React.Component {
       <div className="fourth">
         <TextGroup>
           <Text
-            mobile
             jumbo
             centered
           >For over <strong>fifteen years</strong> we've helped cleaning businesses succeed and grow. CleanTelligent is the most <strong>award-winning, comprehensive</strong> quality control and janitorial software solution.</Text>
@@ -32,14 +31,14 @@ export class Fourth extends React.Component {
             <Counter
               start={0}
               end={33}
-              duration={3}
+              duration={2.8}
               adornment='K'
               info='TOTAL USERS'
             />
             <Counter
               start={0}
               end={4.6}
-              duration={2}
+              duration={3}
               decimals={1}
               adornment='M'
               info='INSPECTIONS PERFORMED'
@@ -47,7 +46,7 @@ export class Fourth extends React.Component {
             <Counter
               start={0}
               end={5.6}
-              duration={3}
+              duration={3.5}
               decimals={1}
               adornment='M'
               info='WORK ORDERS SUBMITTED'
@@ -55,17 +54,17 @@ export class Fourth extends React.Component {
             <Counter
               start={0}
               end={145}
-              duration={3.2}
+              duration={2.5}
               adornment='K'
               info='SERVICE LOCATIONS'
             />
           </div>
         )}
         <div className="comments">
-          <Card comment></Card>
-          <Card comment></Card>
-          <Card comment></Card>
-          <Card comment></Card>
+          <Card></Card>
+          <Card></Card>
+          <Card></Card>
+          <Card></Card>
         </div>
       </div>
     )

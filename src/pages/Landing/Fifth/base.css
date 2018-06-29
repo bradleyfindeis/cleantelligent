@@ -9,10 +9,6 @@
   align-items: center;
 }
 
-.fifth.content > .text-group {
-  width: 45%;
-}
-
 .fifth.content > .form {
   width: 80%;
   margin: 0 auto;
@@ -31,6 +27,10 @@
 }
 
 @media(max-width: 1150px) {
+  .fifth.angled {
+    padding-top: 25px;
+    margin-bottom: -50px;
+  }
   .fifth.content > .form > .fields {
     display: flex;
     flex-direction: column;
@@ -47,13 +47,5 @@
   }
   .fifth.content > .form > .fields > .field {
     width: 90%;
-  }
-  
-}
-
-@media(max-width: 550px) {
-  .fifth.angled {
-    padding: 0;
-    margin-bottom: -50px;
   }
 }

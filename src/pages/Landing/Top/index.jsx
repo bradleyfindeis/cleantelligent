@@ -15,7 +15,7 @@ export function Top() {
   return (
     <Card jumbo className='landing-top'>
       <div className="info">
-        <TextGroup>
+        <TextGroup centered>
           <Text
             jumbo
             light

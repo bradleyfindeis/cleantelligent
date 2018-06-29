@@ -1,5 +1,4 @@
 .second {
-  width: 75%;
   margin: 0 auto;
   position: relative;
   display: flex;
@@ -8,15 +7,17 @@
   padding-top: 100px;
 }
 
-.second > .second-text {
+.second > .text-group {
+  margin-top: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .second > .lapadphone {
   position: relative;
-  margin-top: 200px;
+  margin-top: 100px;
   margin-bottom: -70px;
   z-index: 1;
   height: 600px;
@@ -25,36 +26,9 @@
   align-items: flex-end;
 }
 
-.second > .second-mobile {
-  display: none;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 50px;
-}
-
 @media(max-width: 1050px) {
   .second > .lapadphone {
     height: 500px;
-  }
-}
-
-@media(min-width: 950px) {
-  .second > .second-mobile {
-    display: none;
-  }
-
-  .second > .second-text {
-    display: flex;
-  }
-}
-
-@media(max-width: 915px) {
-  .second > .second-mobile {
-    display: flex;
-  }
-
-  .second > .second-text {
-    display: none;
   }
 }
 

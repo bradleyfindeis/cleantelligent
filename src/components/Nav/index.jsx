@@ -17,9 +17,30 @@ const Brand = () => (
 )
 
 class Burger extends React.Component {
+  state = {
+    isActive: false
+  }
+
+  handleClick = () => {
+    const { isActive } = this.state
+    this.setState({
+      isActive: !isActive
+    })
+  }
+  
   render = () => {
+    const { isActive } = this.state
+
     return (
-      <div className='burger'>burger</div>
+      <button 
+        className={`hamburger hamburger--emphatic${isActive ? ' is-active' : ''}`} 
+        type='button'
+        onClick={this.handleClick}
+      >
+        <span className="hamburger-box">
+          <span className="hamburger-inner"></span>
+        </span>
+      </button>
     )
   }
 }

@@ -1,8 +1,14 @@
+.text-group {
+  padding: 0 200px;
+}
 .text-group > .mobile {
   display: none;
 }
 
 @media(max-width: 915px) {
+  .text-group {
+    padding: 0 30px;
+  }
   .text-group > .desktop {
     display: none;
   }

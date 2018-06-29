@@ -2,10 +2,11 @@ import React from 'react'
 
 import './base.css'
 
-export const TextGroup = ({ children }) => {
+export const TextGroup = ({ children, ...rest }) => {
   const mobileChildren = React.Children.map(children, child => (
     React.cloneElement(child, {
-      mobile: true
+      mobile: true,
+      ...rest
     })
   ))
 

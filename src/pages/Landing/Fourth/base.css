@@ -1,11 +1,11 @@
 .fourth {
-  margin: 300px auto 0 auto;
+  margin: 200px auto 0 auto;
   width: 80%;
 }
 
 .fourth > .comments {
   height: 600px;
-  margin: 150px auto 150px auto;
+  margin: 100px auto 100px auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -21,13 +21,9 @@
 
 .fourth > .counters {
   width: 70%;
-  margin: 50px auto 0 auto;
+  margin: 100px auto 0 auto;
   display: flex;
   justify-content: space-between;
-}
-
-.fourth > .mobile-text-group {
-  display: none
 }
 
 @media(max-width: 1560px) {
@@ -52,12 +48,12 @@
   }
   .fourth > .comments > .card {
     height: 300px;
-    width: 80%;
+    width: 600px;
     margin-top: 50px;
   }
 }
 
-@media(max-width: 950px) {
+@media(max-width: 915px) {
   .fourth > .counters {
     width: 100%;
   }
@@ -69,12 +65,19 @@
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px
   }
+}
 
-  .fourth > .mobile-text-group {
-    display: initial;
+@media(max-width: 700px) {
+  .fourth> .comments > .card {
+    height: 200px;
+    width: 400px;
   }
+}
 
-  .fourth > .text {
-    display: none;
+@media(max-width: 500px) {
+
+  .fourth > .comments > .card {
+    height: 150px;
+    width: 300px;
   }
 }
