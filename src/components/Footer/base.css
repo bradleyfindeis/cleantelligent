@@ -61,6 +61,9 @@ footer > .top > .column.logo > .logo {
   height: 150px;
 }
 
+footer > .top > .column.subscribe > .text-group {
+  padding: 0;
+}
 footer > .top > .column.subscribe > .form > .field {
   width: 250px !important;
 }

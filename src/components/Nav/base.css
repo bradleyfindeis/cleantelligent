@@ -8,9 +8,6 @@ nav {
 }
 
 nav > .hamburger {
-  outline: none;
-  border-radius: 50%;
-  background: var(--white);
 }
 
 nav > .content {
@@ -46,10 +43,6 @@ nav > .content > .logo {
   height: 100px;
 }
 
-nav > .burger {
-  display: none;
-}
-
 @media(max-width: 1160px) {
   nav > .content >.icon {
     display: flex
@@ -65,15 +58,19 @@ nav > .burger {
     display: none;
   }
 
-  nav > .burger {
-    display: flex;
+  nav > .hamburger {
+    display: inline-block;
   }
 }
 
 /* 3RD PARTY CODE */
 .hamburger {
+  display: none;
+  outline: none;
+  border-radius: 50%;
+  background: var(--white);
+
   padding: 15px 15px;
-  display: inline-block;
   cursor: pointer;
   transition-property: opacity, filter;
   transition-duration: 0.15s;
