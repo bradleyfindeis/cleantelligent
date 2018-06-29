@@ -5,14 +5,13 @@ import './base.css'
 export const Icon = ({
   icon,
   light,
-  style
+  brand
 }) => {
-  const classNames = `fa fa-${icon}${light ? ' light' : ''}`
+  const classNames = `fa${brand ? 'b' : ''} fa-${icon}${light ? ' light' : ''}`
 
   return (
-    <div 
+    <div
       className='icon'
-      style={style}
     >
       <i className={classNames}></i>
     </div>

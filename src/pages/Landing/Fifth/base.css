@@ -1,5 +1,5 @@
 .fifth.angled {
-  margin-bottom: -250px;
+  margin-bottom: -300px;
   padding-top: 150px;
 }
 
@@ -16,6 +16,12 @@
 .fifth.content > .form {
   width: 80%;
   margin: 0 auto;
+  padding: 1em;
+  display: flex;
+  background: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .fifth.content > .form > .fields {

@@ -17,6 +17,13 @@ const initialValues = {
   discovery: ''
 }
 
+function handleSubmit(values) {
+  /**
+   * @todo
+   */
+  console.log(values)
+}
+
 export const Fifth = () => {
   return (
     <Card
@@ -43,9 +50,7 @@ export const Fifth = () => {
           backgroundColor: 'grey'
         }}
         initialValues={initialValues}
-        onSubmit={(values) => {
-          console.log(values)
-        }}
+        onSubmit={handleSubmit}
       >
         <div className="fields">
           <Field

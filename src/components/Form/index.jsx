@@ -5,8 +5,6 @@ import {
 } from 'formik'
 
 
-import './base.css'
-
 export class Form extends React.Component {
   render = () => {
     const {

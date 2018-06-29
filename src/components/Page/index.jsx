@@ -7,7 +7,7 @@ import {
 } from '../'
 
 export const Page = ({ children, className }) => (
-  <main className={className}>
+  <main className={`page ${className}`}>
     <Nav />
     {children}
     <Footer />
