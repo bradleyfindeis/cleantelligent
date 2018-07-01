@@ -1,14 +1,20 @@
 .text {
   font-family: 'Montserrat', sans-serif;
-  color: inherit;
+  color: var(--dark-black);
   position: relative;
   margin: 10px;
   top: 0;
 }
 
 .text.option {
+  letter-spacing: 1.5px;
   font-size: 1rem;
   font-weight: 600;
+}
+
+.text.hero {
+  font-size: 4.5rem;
+  font-weight: 400;
 }
 
 .text.jumbo {
@@ -17,7 +23,8 @@
 }
 
 .text.subtitle {
-  font-size: 1.5rem;
+  line-height: 40px;
+  font-size: 1.3rem;
   font-weight: 200;
 }
 
@@ -39,6 +46,10 @@
   text-align: center;
 }
 
+.text.mobile.hero {
+  font-size: 1.5rem;
+}
+
 .text.mobile.jumbo {
   font-size: 1.5rem;
   font-weight: 400;
@@ -46,6 +57,7 @@
 
 .text.mobile.subtitle {
   font-size: 1rem;
+  line-height: initial;
   font-weight: 200;
 }
 
@@ -57,4 +69,22 @@
 .text.mobile.option {
   font-size: 0.5rem;
   font-weight: 600;
+}
+
+@media(max-width: 1630px) {
+  .text.hero {
+    font-size: 3.5rem;
+  }
+}
+
+@media(max-width: 1250px) {
+  .text.hero {
+    font-size: 3rem;
+  }
+}
+
+@media(max-width: 1150px) {
+  .text.hero {
+    font-size: 2rem
+  }
 }

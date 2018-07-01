@@ -1,8 +1,51 @@
+.third.angled {
+  height: 925px;
+}
 .third {
   display: flex;
   align-items: center;
 }
 
 .third > .text-group {
-  margin-top: 150px;
+  margin-top: 100px;
+}
+
+.third > .text-group > .desktop > .jumbo {
+  white-space: nowrap;
+}
+
+@media(max-width: 1250px) {
+  .third.angled {
+    height: 775px;
+  }
+}
+
+@media(max-width: 1150px) {
+  .third.angled {
+    height: 715px;
+  }
+}
+
+@media(max-width: 1050px) {
+  .third.angled {
+    height: 625px;
+  }
+}
+
+@media(max-width: 915px) {
+  .third.angled {
+    height: 615px;
+  }
+}
+
+@media(max-width: 750px) {
+  .third.angled {
+    height: 525px;
+  }
+}
+
+@media(max-width: 600px) {
+  .third.angled {
+    height: 485px;
+  }
 }

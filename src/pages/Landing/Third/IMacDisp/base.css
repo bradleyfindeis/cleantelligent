@@ -1,8 +1,10 @@
 .imac-disp {
-  margin: 200px auto 0 auto;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  position: absolute;
+  top: 375px;
 }
 
 .imac-disp > .img-iMac {
@@ -10,37 +12,57 @@
   position: relative;
 }
 
-.imac-disp > .card {
-  height: 600px;
-  width: 400px;
+.imac-disp > .button {
+  position: absolute;
+  left: 8%;
+  bottom: 60px;
 }
 
 @media(max-width: 1250px) {
   .imac-disp {
-    margin-top: 250px;
+    top: 350px;
   }
 
   .imac-disp > .img-iMac {
     height: 500px;
   }
 
-  .imac-disp > .card {
-    height: 475px;
-    width: 300px;
+  .imac-disp > .button {
+    left: 5.7%;
+  }
+}
+
+@media(max-width: 1150px) {
+  .imac-disp {
+    top: 290px;
   }
 }
 
 @media(max-width: 1050px) {
-  .imac-disp {
-    margin-top: 100px;
-  }
   .imac-disp > .img-iMac {
     height: 400px
   }
 
-  .imac-disp > .card {
-    height: 390px;
-    width: 250px;
+  .imac-disp > .button {
+    left: 8%;
+    width: 100px;
+  }
+}
+
+@media(max-width: 915px) {
+  .imac-disp  {
+    top: 275px; 
+  }
+}
+
+@media(max-width: 750px) {
+  .imac-disp > .img-iMac {
+    height: 300px;
+  }
+
+  .imac-disp > .button {
+    left: 5%;
+    bottom: 25px;
   }
 }
 
@@ -48,20 +70,10 @@
   .imac-disp > .img-iMac {
     height: 250px;
   }
-
-  .imac-disp > .card {
-    height: 200px;
-    width: 120px;
-  }
 }
 
 @media(max-width: 420px) {
   .imac-disp > .img-iMac {
     height: 150px;
-  }
-
-  .imac-disp > .card {
-    height: 120px;
-    width: 70px;
   }
 }

@@ -7,7 +7,7 @@
 }
 
 .card.jumbo {
-  height: 100vh;
+  height: 940px;
   width: 100%;
   background: var(--main-gradient);
   /* z-index: 0; */

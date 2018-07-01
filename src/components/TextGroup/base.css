@@ -5,15 +5,18 @@
   display: none;
 }
 
-@media(max-width: 915px) {
-  .text-group {
-    padding: 0 30px;
-  }
+@media(max-width: 1150px) {
   .text-group > .desktop {
     display: none;
   }
 
   .text-group > .mobile {
     display: initial;
+  }
+}
+
+@media(max-width: 915px) {
+  .text-group {
+    padding: 0 30px;
   }
 }

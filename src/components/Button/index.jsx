@@ -10,9 +10,10 @@ export class Button extends React.Component {
       large,
       small,
       filled,
+      blue,
       ...rest
     } = this.props
-    const classNames = `button${medium ? ' medium' : ''}${large ? ' large' : ''}${small ? ' small' : ''}${filled ? ' filled' : ''}`
+    const classNames = `button${medium ? ' medium' : ''}${large ? ' large' : ''}${small ? ' small' : ''}${filled ? ' filled' : ''}${blue ? ' blue' : ''}`
 
     return (
       <button

@@ -1,5 +1,5 @@
 .button {
-  height: 40px;
+  height: 50px;
   margin: 10px;
   font-family: inherit;
   font-size: 10px;
@@ -10,6 +10,7 @@
   border: 1px solid var(--white);
   cursor: pointer;
   border-radius: 25px;
+  transition: 0.5s;
 }
 
 .button:focus {
@@ -18,7 +19,7 @@
 
 .button:hover {
   background: var(--white);
-  color: var(--blue)
+  color: var(--light-blue)
 } 
 
 .button.large {
@@ -30,18 +31,30 @@
 }
 
 .button.small {
-  width: 130px;
+  width: 150px;
 }
 
 .button.filled {
   background: var(--white);
-  color: var(--blue);
+  color: var(--light-blue);
 }
 
 .button.filled:hover {
-  background: var(--blue);
-  border: 1px solid var(--blue);
+  background: var(--light-blue);
+  border: 1px solid var(--light-blue);
   color: var(--white);
+}
+
+.button.blue {
+  background: var(--light-blue);
+  border: 1px solid var(--light-blue);
+  color: var(--white);
+}
+
+.button.blue:hover {
+  background: var(--white);
+  border: 1px solid var(--light-blue);
+  color: var(--light-blue);
 }
 
 @media(max-width: 600px) {
@@ -52,7 +65,7 @@
 
   .button.filled:hover {
     background: var(--white);
-    color: var(--blue);
-    border: 1px solid var(--blue);
+    color: var(--light-blue);
+    border: 1px solid var(--light-blue);
   }
 }

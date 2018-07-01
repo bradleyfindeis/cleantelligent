@@ -2,7 +2,7 @@
  display: flex;
  justify-content: center;
  align-items: center;
- margin-top: 50px;
+ margin-top: 25px;
  color: var(--white);
 }
 
@@ -30,7 +30,7 @@
 @media(max-width: 915px) {
   .mini-nav {
     width: 80%;
-    margin: 50px auto 0 auto;
+    margin: 25px auto;
   }
   .mini-nav > .mini-nav-opt > .text {
     display: none;

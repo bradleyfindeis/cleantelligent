@@ -12,14 +12,13 @@ export const Text = ({
   mobile,
   fineprint,
   centered,
-  style
+  hero,
 }) => {
-  const classNames = `text${jumbo ? ' jumbo' : ''}${subtitle ? ' subtitle' : ''}${option ? ' option' : ''}${fineprint ? ' fineprint' : ''}${body ? ' body' : ''}${light ? ' light' : ''}${centered ? ' centered' : ''}${mobile ? ' mobile' : ''}`
+  const classNames = `text${jumbo ? ' jumbo' : ''}${subtitle ? ' subtitle' : ''}${option ? ' option' : ''}${fineprint ? ' fineprint' : ''}${body ? ' body' : ''}${light ? ' light' : ''}${centered ? ' centered' : ''}${mobile ? ' mobile' : ''}${hero ? ' hero' : ''}`
 
   return (
     <div 
       className={classNames}
-      style={style && style}
     >
       {option ? children.toUpperCase() : children}
     </div>

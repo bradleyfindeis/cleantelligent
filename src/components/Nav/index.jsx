@@ -101,13 +101,14 @@ export class Nav extends React.Component {
   render = () => {
     return (
       <nav>
-        <Burger />
-        <div className='content'>
-          <Brand />
-          <Options />
-          <Buttons />
-        </div>
-        <hr />
+        <div className="padding">
+          <Burger />
+          <div className='content'>
+            <Brand />
+            <Options />
+            <Buttons />
+          </div>
+          <hr /></div>
       </nav>
     )
   }
