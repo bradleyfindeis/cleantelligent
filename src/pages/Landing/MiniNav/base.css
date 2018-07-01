@@ -20,6 +20,9 @@
 .mini-nav > .mini-nav-opt.active {
   border-radius: 10px;
   background: var(--white);
+}
+
+.mini-nav > .mini-nav-opt.active > .text {
   color: var(--blue);
 }
 

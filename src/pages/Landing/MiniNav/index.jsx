@@ -11,11 +11,15 @@ export const MiniNav = ({ current, handleClick }) => {
         name={label}
         className={`mini-nav-opt ${current === label ? ' active' : ''}`}
       >
-        <Text option>
+        <Text 
+          option
+          light
+        >
           {label}
         </Text>
         <Text 
           mobile
+          light
           option
         >
           {label}
