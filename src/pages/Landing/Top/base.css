@@ -5,13 +5,13 @@
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
-}
+} 
 
 .landing-top > .padding > .info {
   box-sizing: border-box;
   width: 50%;
   height: 80%;
-  margin-left: 50px;
+  margin-left: 100px;
   display: flex;
     display: -webkit-flex;
   padding-top: 200px;
@@ -29,6 +29,7 @@
   position: absolute;
   bottom: -100px;
   right: 150px;
+  opacity: 0;
 }
 
 .landing-top > .padding > .info > .mobile-button-group {
@@ -42,6 +43,7 @@
   }
 
   .landing-top > .padding > .img-iPhone1 {
+    padding-top: 800px;
     right: 100px;
   }
 }
@@ -104,8 +106,3 @@
   }
 }
 
-@media(max-width: 600px) {
-  .landing-top > .padding > .mobile-top {
-    padding-top: 100px;
-  }
-}

@@ -13,8 +13,9 @@ export const Text = ({
   fineprint,
   centered,
   hero,
+  squeezed,
 }) => {
-  const classNames = `text${jumbo ? ' jumbo' : ''}${subtitle ? ' subtitle' : ''}${option ? ' option' : ''}${fineprint ? ' fineprint' : ''}${body ? ' body' : ''}${light ? ' light' : ''}${centered ? ' centered' : ''}${mobile ? ' mobile' : ''}${hero ? ' hero' : ''}`
+  const classNames = `text${jumbo ? ' jumbo' : ''}${subtitle ? ' subtitle' : ''}${option ? ' option' : ''}${fineprint ? ' fineprint' : ''}${body ? ' body' : ''}${light ? ' light' : ''}${centered ? ' centered' : ''}${mobile ? ' mobile' : ''}${hero ? ' hero' : ''}${squeezed ? ' squeezed' : ''}`
 
   return (
     <div 

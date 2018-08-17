@@ -1,7 +1,7 @@
 import React from 'react'
 
 import './base.css'
-
+import Fade from 'react-reveal/Fade';
 import {
   Card,
   Text,
@@ -16,7 +16,7 @@ export function Top() {
   return (
     <Card jumbo className='landing-top'>
       <div className="padding">
-        <div className="info">
+        <div className="info" style={{paddingTop: 400}}>
           <TextGroup centered>
             <Text
               hero
@@ -29,34 +29,38 @@ export function Top() {
           </TextGroup>
           <div
             className='button-group'
-          >
+            >
             <Button
               filled
               small
               label='request a demo'
-            />
+              />
             <Button
               small
               label='learn more'
-            />
+              />
           </div>
           <div className="mobile-button-group">
             <Button
               large
               filled
               label='learn more'
-            />
+              />
           </div>
+          <div style={{marginTop: 50}}>
           <Icon
             light
             icon='angle-down'
-          />
+            />
+          </div>
         </div>
-        <img
-          className='img-iPhone1'
-          src={iPhone1}
-          alt='iphone rendering'
-        />
+        <Fade>
+          <img
+            className='img-iPhone1'
+            src={iPhone1}
+            alt='iphone rendering'
+            />
+        </Fade>
       </div>
     </Card>
   )

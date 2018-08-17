@@ -8,13 +8,13 @@ footer {
 }
 
 footer > .top {
-  height: 90%;
+  height: 85%;
   background: var(--light-blue)
 }
 
 footer > .bottom {
   display: flex;
-  height: 10%;
+  height: 15%;
   justify-content: space-between;
 }
 
@@ -27,7 +27,7 @@ footer > .bottom > .left {
 }
 
 footer > .bottom > .left > hr {
-  height: 30%;
+  height: 50%;
   margin: 0;
 }
 

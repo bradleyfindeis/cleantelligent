@@ -41,6 +41,7 @@ export const Fifth = () => {
           subtitle
           centered
           light
+          squeezed
         >
           Schedule a free demo today! Discover how CleanTelligent can simplify your life and cleaning business needs.
         </Text>
@@ -73,17 +74,18 @@ export const Fifth = () => {
             type='select'
             name='discovery'
           >
-            <option value=''>How did you hear about us?</option>
+            <option value=''>How did you first hear about CleanTelligent?</option>
             <option value="test">test</option>
             <option value="other">other</option>
           </Field>
         </div>
-
+        <br/>
         <Button
           label='request a demo'
           large
           filled
           type='submit'
+
           placeholder='Name'
         />
       </Form>

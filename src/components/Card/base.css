@@ -4,6 +4,8 @@
   border-radius: 3px;
   display: flex;
   position: relative;
+  background-color: #eff6f9;
+  
 }
 
 .card.jumbo {
@@ -24,4 +26,27 @@
   transform: skewY(-2deg);
   display: flex;
   flex-direction: column;
+  
+}
+
+.profile {
+  height: 100px;
+  width: 100px;
+  padding-top: 10px;
+  border-radius: 90;
+  display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  justify-content: center;
+
+}
+
+.stars {
+  height: 40px !important;
+  width: 40px !important;
+  display: flex !important;
+    margin-left: auto;
+    margin-right: auto;
+  justify-content: center;
+  padding-top: 250px;
 }
