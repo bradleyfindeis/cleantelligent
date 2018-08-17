@@ -60,7 +60,7 @@ export function Top() {
             src={iPhone1}
             alt='iphone rendering'
             />
-        </Fade>
+        </Fade> 
       </div>
     </Card>
   )
